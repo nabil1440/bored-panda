@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './styles/checkbox.css';
 
 @theme {
   --color-primary: oklch(0.72 0.11 178);

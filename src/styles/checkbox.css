@@ -1,0 +1,113 @@
+/* Root */
+.ui-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+/* Hide native checkbox but keep it functional */
+.ui-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Box */
+.ui-checkbox-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease;
+}
+
+/* Checkmark */
+.ui-checkbox-check {
+  font-size: 18px;
+  color: #9ca3af;
+  opacity: 0;
+  transition: all 150ms ease;
+}
+
+/* ───────────────────────── */
+/* UNCHECKED STATES          */
+/* ───────────────────────── */
+
+/* Hover preview */
+.ui-checkbox:hover input:not(:checked) + .ui-checkbox-box .ui-checkbox-check {
+  opacity: 0.5;
+}
+
+/* Active preview */
+.ui-checkbox:active input:not(:checked) + .ui-checkbox-box .ui-checkbox-check {
+  opacity: 0.7;
+}
+
+/* Box hover */
+.ui-checkbox:hover .ui-checkbox-box {
+  border-color: #9ca3af;
+}
+
+/* ───────────────────────── */
+/* CHECKED STATES            */
+/* ───────────────────────── */
+
+.ui-checkbox input:checked + .ui-checkbox-box {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.ui-checkbox input:checked + .ui-checkbox-box .ui-checkbox-check {
+  opacity: 1;
+  color: white;
+}
+
+/* Checked hover */
+.ui-checkbox:hover input:checked + .ui-checkbox-box {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Checked active */
+.ui-checkbox:active input:checked + .ui-checkbox-box {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+/* ───────────────────────── */
+/* FOCUS                     */
+/* ───────────────────────── */
+
+.ui-checkbox input:focus-visible + .ui-checkbox-box {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+/* Label */
+.ui-checkbox-label {
+  font-size: 14px;
+  color: #111827;
+}
+
+/* State 3: Unchecked press / focus preview */
+.ui-checkbox input:not(:checked):active + .ui-checkbox-box,
+.ui-checkbox input:not(:checked):focus-visible + .ui-checkbox-box {
+  outline: 4px solid rgba(96, 165, 250, 0.25);
+  outline-offset: 0;
+}
+
+.ui-checkbox input:not(:checked):active + .ui-checkbox-box .ui-checkbox-check,
+.ui-checkbox
+  input:not(:checked):focus-visible
+  + .ui-checkbox-box
+  .ui-checkbox-check {
+  opacity: 1;
+  color: #9ca3af;
+}
