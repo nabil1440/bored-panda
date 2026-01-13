@@ -12,7 +12,8 @@
   background-color: #ffce22; /* State 1: default */
   color: #111827;
 
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 130%;
   font-weight: 400;
 
   cursor: pointer;
