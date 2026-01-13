@@ -8,7 +8,7 @@
   justify-content: space-between;
 
   width: 100%;
-  padding: 16px 20px;
+  padding: 8px 20px;
 
   border-radius: 12px;
   cursor: pointer;
@@ -39,7 +39,7 @@
 }
 
 .ui-checkbox-text {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   color: #111827;
 }
@@ -49,10 +49,10 @@
 /* ───────────────────────── */
 
 .ui-checkbox-box {
-  width: 32px;
-  height: 32px;
+  width: 23px;
+  height: 23px;
 
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #d1d5db;
   background: white;
 
