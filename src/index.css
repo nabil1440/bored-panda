@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './styles/checkbox.css';
+@import './styles/button.css';
 
 :root {
   font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont,
