@@ -111,3 +111,14 @@
   opacity: 1;
   color: #9ca3af;
 }
+
+/* Checked + active (mouse down) */
+.ui-checkbox:active input:checked + .ui-checkbox-box {
+  background: #1e40af; /* darker blue */
+  border-color: #1e40af;
+}
+
+.ui-checkbox:active input:checked + .ui-checkbox-box {
+  outline: 4px solid rgba(96, 165, 250, 0.25);
+  outline-offset: 0;
+}

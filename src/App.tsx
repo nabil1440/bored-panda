@@ -6,7 +6,7 @@ function App() {
     <main className='w-full flex justify-center'>
       <section className='w-3/12'>
         <h1 className='text-3xl'>Hello world!</h1>
-        <Checkbox />
+        <Checkbox label='Page 1' />
       </section>
     </main>
   );
