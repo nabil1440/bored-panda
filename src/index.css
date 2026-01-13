@@ -1,4 +1,15 @@
 @import 'tailwindcss';
+@import './styles/checkbox.css';
+
+:root {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+* {
+  font-family: inherit;
+}
 
 @theme {
   --color-primary: oklch(0.72 0.11 178);
