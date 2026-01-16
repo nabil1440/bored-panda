@@ -25,7 +25,7 @@ function App() {
 
   return (
     <main className='w-full min-h-screen flex justify-center items-center'>
-      <section className='w-3/12 flex justify-center'>
+      <section className='w-full lg:w-3/12 flex justify-center'>
         <div className='ui-panel'>
           {/* Header */}
           <div className='ui-panel-header'>
